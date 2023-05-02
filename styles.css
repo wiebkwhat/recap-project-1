@@ -1,25 +1,19 @@
-* {box-sizing: border-box;
-    padding: 0;
-margin: 0;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
-    padding: 0;
-    margin: 0;    
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    
+  width: 100vw;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
-
 header {
-
-  border: 11px solid blue;
+  border: 1px solid blue;
+  border-radius: 20vw;
+  color: blue;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,8 +21,7 @@ header {
   height: 20vh;
   width: auto;
   font-size: 10vh;
-  color: blue;
-  padding-bottom: 1.25vw;
+  margin-bottom: 10vw;
 }
 
 main {
@@ -42,7 +35,7 @@ main {
   align-items: center;
   justify-content: center;
   align-content: center;
-  gap: 5vh;
+  gap: 10vh;
   display: flex;
 }
 
@@ -56,8 +49,25 @@ main {
   gap: 2vh;
   display: flex;
   border: solid 1px black;
-  width: 50vw;
-  height: 50vh;
+  border: 1px solid blue;
+  border-radius: 25px;
+  color: blue;
+  margin: 5vw;
+  width: 100%;
+}
+
+.bookmark {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  color: blue;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 2vh;
+  list-style-type: none;
+  padding-left: 2vw;
 }
 
 .listen-container {
@@ -66,39 +76,34 @@ main {
   color: red;
   display: flex;
   flex-direction: row;
-  justify-content:flex-start
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 2vh;
   list-style-type: none;
   padding-left: 2vw;
- 
- 
-
 }
 
 tag {
-    border: 1px solid blue;
-
-
+  border: 1px solid blue;
 }
 
 h1 {
   text-transform: uppercase;
 }
 
-button [hidden] {
-}
-
 button.after {
   display: none;
 }
-.tags {
-}
 
 footer {
+}
+
+.navi {
+  border-radius: 20vw;
+  bottom: 0;
   background: blue;
   display: flex;
   flex-direction: row;
-  justify-content: space-between
-  text-align:left;
+  justify-content: space-between;
+  list-style-type: none;
 }
