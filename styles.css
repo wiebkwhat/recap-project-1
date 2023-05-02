@@ -20,7 +20,7 @@ header {
   text-align: center;
   height: 20vh;
   width: auto;
-  font-size: 10vh;
+  font-size: 5vw;
   margin-bottom: 10vw;
 }
 
@@ -35,7 +35,7 @@ main {
   align-items: center;
   justify-content: center;
   align-content: center;
-  gap: 10vh;
+  gap: 2vh;
   display: flex;
 }
 
@@ -52,11 +52,11 @@ main {
   border: 1px solid blue;
   border-radius: 25px;
   color: blue;
-  margin: 5vw;
   width: 100%;
 }
 
-.bookmark {
+.bookmark-stroke {
+  display: none;
   border: none;
   background-color: transparent;
   width: 100%;
@@ -70,8 +70,22 @@ main {
   padding-left: 2vw;
 }
 
+.bookmark-filled {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  color: blue;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 2vh;
+  list-style-type: none;
+  padding-left: 2vw;
+  display: none;
+}
+
 .listen-container {
-  border: 1px red solid;
   width: 100%;
   color: red;
   display: flex;
@@ -81,10 +95,14 @@ main {
   gap: 2vh;
   list-style-type: none;
   padding-left: 2vw;
+  margin: 2vw;
 }
 
 tag {
   border: 1px solid blue;
+  color: blue;
+  border-radius: 2vw;
+  padding: 0.25vw;
 }
 
 h1 {
@@ -96,6 +114,9 @@ button.after {
 }
 
 footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
 
 .navi {
@@ -104,6 +125,6 @@ footer {
   background: blue;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   list-style-type: none;
 }
